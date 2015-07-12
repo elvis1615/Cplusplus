@@ -1,37 +1,11 @@
-#include <iostream>
+#include "main.h"
 
-using namespace std;
-
-class cuentas
+main::main()
 {
-    public:
-        int sumaDos(int arg);
-        int sumaTres(int arg);
-
-
-    private:
-        int resultado;
-
-};
-
-int cuentas::sumaDos(int arg)
-{
-    resultado=arg+2;
-    return resultado;
+    //ctor
 }
 
-int cuentas::sumaTres(int arg)
+main::~main()
 {
-    resultado= arg+3;
-    return resultado;
-}
-
-int main()
-{
-    cuentas cuenta;
-
-    cout<<"+2="<<cuenta.sumaDos(2)<<endl;
-    cout<<"+3="<<cuenta.sumaTres(2)<<endl;
-    cin.get();
-    return 0;
+    //dtor
 }
